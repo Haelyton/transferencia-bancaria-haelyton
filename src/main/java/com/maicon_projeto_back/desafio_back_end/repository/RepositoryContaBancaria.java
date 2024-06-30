@@ -6,7 +6,10 @@ import org.jrimum.domkee.banco.ContaBancaria;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface repositoryContaBancaria extends JpaRepository<ContaBancaria, Long> {
+public interface RepositoryContaBancaria extends JpaRepository<ContaBancaria, Long> {
 
     Optional<ContaBancaria> findByCpf(String cpf);
+
+
+
 }
