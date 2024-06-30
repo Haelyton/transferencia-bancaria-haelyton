@@ -6,19 +6,17 @@ import com.maicon_projeto_back.desafio_back_end.repository.RepositoryContaBancar
 import com.maicon_projeto_back.desafio_back_end.repository.RepositoryTransferencia;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.xml.bind.ValidationException;
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-
 public class TransferenciaService {
 
     @Autowired
-    private RepositoryContaBancaria repContaBancaria;
+     RepositoryContaBancaria repContaBancaria;
 
     @Autowired
-    private RepositoryTransferencia repTransferencia;
+     RepositoryTransferencia repTransferencia;
 
 
         public void realizarTransferencia(Long idEmitente, Long idContaRecebimento, BigDecimal valor) throws ValidationException, FileNotFoundException {

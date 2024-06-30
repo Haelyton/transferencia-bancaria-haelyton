@@ -17,7 +17,11 @@ public class Transferencia {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "contaEmitente")
+    // Como aqui é uma conexão entre tabelas, não utiliza o @Column, se utiliza o @JoinColumn
+    // vou deixar o contaEmitente como exemplo e você faz no recebimento
+    // o OneToOne é para dizer que é uma relação de um para um
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "contaEmitente")
     private ContaBancaria contaEmitente;
 
     @Column(name = "contaRecebimento")
