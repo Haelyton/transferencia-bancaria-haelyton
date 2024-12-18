@@ -12,7 +12,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-
+/*treinamento GIT Aguinaldo*/
 @Getter
 @Setter
 @Entity
